@@ -1,0 +1,114 @@
+  .crud-container{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size:20px;
+   /* display: flex;
+   align-items: center;
+   justify-content: center; */
+   background: linear-gradient(45deg , #d5d5d5,#e5e5e5);
+   border-radius: 10px;
+   padding:10px;
+  
+
+ }
+ /* .table{
+   
+ } */
+ .btnEdit{
+   margin-left: 5px;
+ }
+ .btnDelete{
+   margin-left: 5px;
+ }
+ .btnsubmit{
+   border: 1px solid #888;
+   padding: 5px 10px;
+   border-radius: 5px;
+   font-size: 17px;
+   cursor: pointer;
+   color: rgb(56,98,  119);
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .table td, .table th {
+   border: 1px solid #aaa;
+   padding:8px;
+
+ }
+ /* .table td{
+  height: auto;
+ } */
+ .className label{
+   width: 100%;
+   margin-bottom: 10px;
+
+ }
+ .className input{
+   width: 100%;
+   margin-bottom: 10px;
+   margin-top: 10px;
+   height:30px;
+
+ }
+ .className textarea{
+   width: 100%;
+   margin-top: 10px;
+
+ }
+ .table{
+  /* padding-left: 500px; */
+  padding-left:33vw;
+
+ }
+
+ .table th{
+   padding-top: 15px;
+   padding-bottom: 15px;
+   text-align: left;
+   background-color: #555555;
+   color: rgb(186 186 186);
+   font-size: 20px;
+
+ }
+ .btnsubmit:hover{
+   background-color: #222;
+   color:#ccc;
+ }
+ .heading{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+.toolbar{
+   display: flex;
+   justify-content: flex-end;
+}
+.crud-footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  height: 130px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* border-radius: 15px; */
+}
+.crud-footer p{
+  color: antiquewhite;
+}
+.social-logo-c{
+  display: flex;
+  gap: 2rem;
+  height: 150px;
+
+}
+.crud-credits{
+  position: relative;
+   right:20px;
+}
+.social-logo-c{
+  height: 30px;
+}
+.social-logo-img-c img{
+  margin-top: 50px;
+}
