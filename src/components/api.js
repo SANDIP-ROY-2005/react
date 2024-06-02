@@ -10,6 +10,7 @@ const getWeather = async(city) => {
   return data;
 
 }
+ 
 
 export  default   getWeather;
 

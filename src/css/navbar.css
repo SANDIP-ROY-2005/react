@@ -5,6 +5,9 @@
   nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    
     background-color: #333;
   }
   .navbar{
@@ -29,49 +32,27 @@
     height: 100%;
     object-fit: cover;
   }
-/* 
-   nav{
-    background-color: #333;
-    height: 65px;
-    color: wheat;
-     display: flex;
-     align-items: center;
-      gap: 2rem;
-      top: 0px;
-       
-      right: 0%;
-       */
-    
-     
-          /* display: flex;
-    gap: 10px;
-    background-color: black;
-   max-width:100vh;
-    padding: 1rem;
-    justify-content: space-between;
-    align-items: center;
+  @media (max-width: 768px) {
+    nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #282c34;
+      width: 100%;
+      padding: 1rem;
+    }
   
- 
-    color: white;
-    height: 40px;
-  */
-     
    
    
-   /* .logo{
-    background-size: cover;
-    height: 100px;
-    width: 70px;
-   } */
-   /* nav .red{
-    position: relative;
-    left: 87vw;
-   }  */
-    
-   /* li{
-    list-style: none;
-   }
-   a li{
-    color: white;
   }
-    */
+  
+  @media (max-width: 600px) {
+    .logo img {
+      width: 80px;
+    }
+  
+    
+  }
+ 

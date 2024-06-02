@@ -68,7 +68,7 @@ const Weather = () => {
          <div className="social-logo-w">
             <p>FOLLOW US ON : </p>
             <img src="../img/fflogo.png" className="social-logo-img"></img>
-            {/* <img src="../img/tlogo.png" className="social-logo-img"></img> */}
+           
             <img src="../img/ilogo.png" className="social-logo-img"></img>
             <img src="../img/llogo.png" className="social-logo-img"></img>
             <img src="../img/yt.png" className="social-logo-img"></img>
