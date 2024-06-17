@@ -1,0 +1,24 @@
+.weather-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #af8f7e;
+    color: white;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .social-logo-w {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .social-logo-img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .weather-credits {
+    text-align: center;
+  }

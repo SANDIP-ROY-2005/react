@@ -4,34 +4,32 @@ import './App.css'
 import Navbar from './components/Navbar';
 import Weather from './components/Weather';
 import Crud from './components/Crud';
+
+ import Contact from './components/Contact';
 import {createBrowserRouter , RouterProvider } from 'react-router-dom'
-  // import getWeather from './api/api';
+import Work from './components/Work';
+ 
+   
 function App() {
-    // const [city, setCity] = useState("");
-    // const [weather, setWeather] = useState({});
-    // const getWeatherbycity =  async () => {
-    //     const weatherData = await getWeather(city);
-    //     setWeather(weatherData);
-    //     setCity("");
-    // }
+     
     const router = createBrowserRouter([
       {
         
         path: "/",
-        element:    <Weather/>  
+        element:  <> <Navbar/>   <Weather/>  </>
       },
       {  
         path: "/todo",
-        element:  <>  <Navbar/>   <Crud/>    </>
+        element:  <>  <Navbar/>   <Work/>    </>
       },
+      {  
+        path: "/testimonial",
+        element:  <>  <Navbar/>   <Contact/>    </>
+      }
+ 
     ])
-    // const router = createBrowserRouter([
-      
-    //   { 
-    //     path: "/todo",
-    //     element:  <>  <Navbar/>   <Crud/>    </>
-    //   }
-    // ])
+     
+    
   return (
     <>
      <RouterProvider router={router}/>

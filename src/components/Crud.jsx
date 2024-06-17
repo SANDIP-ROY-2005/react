@@ -40,19 +40,19 @@ const Crud = () => {
        
 
     }
-    // const updateUser = ()=>{
-    //     const newUsers = userdata.map((x,i)=>{
-    //         if(i ===editIndex){
-    //             x = user;
-    //         }
-    //         return x;
-    //     });
-    //     setUserdata(newUsers);
-    //     setUser(blankUser);
-    //     setEditIndex(null);
-    //     onCloseModal();
+    const updateUser = ()=>{
+        const newUsers = userdata.map((x,i)=>{
+            if(i ===editIndex){
+                x = user;
+            }
+            return x;
+        });
+        setUserdata(newUsers);
+        setUser(blankUser);
+        setEditIndex(null);
+        onCloseModal();
 
-    // }
+    }
     const deleteUser =(index)=>{
         const newUsers = userdata.filter((x,i)=> {
             return i!=index});
@@ -94,12 +94,12 @@ const Crud = () => {
                  <td>{user.role}</td>
                  <td>{user.address}</td>
                  <td>
-                     {/* <button className="btnEdit" onClick={()=> editUser(index)}  >
+                     <button className="btnEdit" onClick={()=> editUser(index)}  >
                          EDIT
                      </button>
                      <button className="btnDelete"  onClick={()=>deleteUser(index)}   >
                           DELETE
-                     </button> */}
+                     </button>
                      
                  </td>
              </tr>)
@@ -121,7 +121,7 @@ const Crud = () => {
         <label htmlFor="name">ADDRESS</label>
         <textarea name="address" cols="30" rows="4"   value ={user.address} onChange={(e)=>setUser({...user,"address":e.target.value})}></textarea>
          {action ==='Add' && <button className="btnsubmit" onClick={()=>addUser()}>SUBMIT</button>}
-         {/* {action ==='Edit' && <button className="btnsubmit" onClick={()=>updateUser()}>UPDATE</button>} */}
+         {action ==='Edit' && <button className="btnsubmit" onClick={()=>updateUser()}>UPDATE</button>}
         </div>
       </Modal>
     </div>
